@@ -7,18 +7,20 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="medkit.ico">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
     <title>Tierarztpraxis Frese</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+
+
 
     <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <!-- <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,7 +29,7 @@
     <![endif]-->
   </head>
 
-  <body style="background-color:#f9eed2">
+  <body >
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,9 +46,9 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li ><a href="index.html">Öffnungszeiten <span class="sr-only">(current)</span></a></li>
-                <li ><a href="medizinische_leistungen">Medizinische Leistungen</a></li>
-                <li class="active"><a href="notdienst.html">Notdienst</a></li>
+              <li><a href="index.html">Öffnungszeiten <span class="sr-only">(current)</span></a></li>
+              <li><a href="medizinische_leistungen">Medizinische Leistungen</a></li>
+              <li><a href="notdienst.html">Notdienst</a></li>
              <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -65,43 +67,48 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-<style>
-.panel-body{
-    padding-top:0px;
-    }
-</style>
+
 <div class="container" style="padding-top:80px">
 
 
 <div class="panel panel-default">
   <div class="panel-body">
-      <h3> Erreichbarkeit im Notfall</h3>
+<h3 class="headline"> Erreichbarkeit im Notfall</h3>
 Bei einem Notfall können Sie versuchen mich unter der Praxisnummer<br><br>
 
-<h2>06232 - 91 91 933</h2>
+<h4><a href="tel:+4962329191933"> 06232 - 91 91 933</a></h4><br>
 
-zu erreichen, der Anruf wird auf das<br>
-Notdiensthandy<br>
-0170 - 54 50 188 weitergeleitet, bitte lassen Sie es länger klingeln und schalten Sie Ihre Rufnummernübermittlung ein.<br><br>
+zu erreichen, der Anruf wird auf das Notdiensthandy <b><a href="tel:+491705450188"> 0170 - 54 50 188</a></b> weitergeleitet, bitte lassen Sie es länger klingeln und schalten Sie Ihre Rufnummernübermittlung ein.<br><br>
 
 
 Sollte es mir nicht möglich sein, mich Ihrer Anfrage oder Ihrem Tier umfassend widmen zu können, werden Sie durch unseren Anrufbeantworter über Telefonnummer und Anschrift des tierärztlichen Notdienstes informiert.<br><br>
 
-Unsere Praxis bildet zusammen mit fünf weiteren Tierarztpraxen den Notdienstkreis Speyer - Schwegenheim - Dudenhofen - Germersheim und Umgebung. Angeschlossene Praxen sind:  Bonnet - Dudenhofen, Frese - Speyer, Groh - Schwegenheim, Hülsmann - Speyer, Klasen und van Suntum - Germersheim und Kremp - Speyer<br><br>
+Unsere Praxis bildet zusammen mit fünf weiteren Tierarztpraxen den Notdienstkreis Speyer - Schwegenheim - Dudenhofen - Germersheim und Umgebung. Angeschlossene Praxen sind:
+<br><br>
+<ul>
+    <li>Bonnet - Dudenhofen</li>
+    <li>Frese - Speyer</li>
+    <li>Groh - Schwegenheim</li>
+    <li>Hülsmann - Speyer</li>
+    <li>Klasen und van Suntum - Germersheim</li>
+    <li>Kremp - Speyer</li>
+</ul><br>
 
 Als Serviceleistung stelle ich Ihnen gerne den Notdienstkalender zur Verfügung. Er dient zur Orientierung - kurzfristige Änderungen können noch nicht enthalten sein. Gültigkeit hat immer die Mitteilung in der lokalen Presse.<br>
-
+<div class="alert alert-danger" role="alert">
 Achtung! Der Notdienst beginnt am Abend nach Praxisschluß und geht bis morgens die Tierarztpraxen wieder öffnen. Sollten Sie also z.B. am Mittwoch Morgen einen Notfall haben müssen Sie den notdiensthabenden Tierarzt vom Dienstag anrufen.<br>
 </div>
 
 </div>
 
+</div>
+
 
 
 </div>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
 </html>

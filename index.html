@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-control" content="no-cache">
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -12,13 +14,15 @@
     <title>Tierarztpraxis Frese</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+
+
 
     <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <!-- <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,7 +31,8 @@
     <![endif]-->
   </head>
 
-  <body style="background-color:#f9eed2">
+  <body >
+
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,7 +49,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Öffnungszeiten <span class="sr-only">(current)</span></a></li>
+              <li><a href="index.html">Öffnungszeiten <span class="sr-only">(current)</span></a></li>
               <li><a href="medizinische_leistungen">Medizinische Leistungen</a></li>
               <li><a href="notdienst.html">Notdienst</a></li>
              <!-- <li class="dropdown">
@@ -65,120 +70,83 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-<style>
-.panel-body{
-    padding-top:0px;
-    }
-</style>
-<div class="container" style="padding-top:80px">
 
+<!--<div class="alert alert-info alert-dismissable" data-dismiss="alert" role="alert"><center>Unsere Website befindet sich zur Zeit in der Wartung. Hier finden Sie die wichtigsten Informationen.<div data-dismiss="alert" class="close">x</div></center>
+</div>-->
+<div class="container" style="padding-top:50px">
+    <div class="jumbotron"></div> <!-- Hier ist das Logo drin -->
 
-<div class="jumbotron" style="background:#749fb3; color:white">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h3> Kontakt</h3>
+            <p>Telefon: <a href="tel:+4962329191933">(06232) 91 91 933</a></p>
+            <p>Fax: (06232) 91 91 929</p>
+            <p>E-Mail: <a href="mailto:info@tierarztpraxis-frese.de">info@tierarztpraxis-frese.de</a></p>
+            <p>Adresse: <a href="https://www.google.de/maps/place/Tierarztpraxis+Heike+Frese/@49.334441,8.367508,12z/data=!4m8!1m2!2m1!1sfrese!3m4!1s0x4797b69e1a7eba6b:0xe492857772b637ce!8m2!3d49.334441!4d8.4375458">Auestraße 17, 67346 Speyer</a></p>
+        </div>
+    </div>
 
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h3>Öffnungszeiten</h3>
+            <p>Zu den Öffnungszeiten ist die Praxis geöffnet und die Anmeldung besetzt. Wenn Sie Medikamente oder Futtermittel abholen oder einen Termin vereinbaren möchten, können Sie innerhalb dieser Zeiten vorbeikommen oder uns telefonisch erreichen.<br><br>
+            Wir freuen uns auch, wenn Sie einfach mal nur vorbeischauen und sich über das aktuelle Angebot informieren oder Ihren Hund wiegen möchten.<br><br>
 
-      <!--<img class="media-object img-rounded" src="logo.jpg" alt="...">-->
+            <span class="label label-danger">Wichtig</span><b> Für Behandlungen außerhalb der offenen Sprechstunde benötigen Sie einen Termin.</b></p>
+            <table class="table">
+                <thead>
+                    <th>Wochentag</th>
+                    <th>Öffnungszeiten</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mo, Di, Do, Fr</td>
+                        <td>
+                            08.30 - 13.00<br><br>
+                            14.30 - 18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mittwoch</td>
+                        <td>
+                            14.30 - 20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samstag</td>
+                        <td>
+                            08.30 - 11.00</td>
+                    </tr>
+                </tbody>
+            </table>
 
-    <h1 class="media-heading ">Tierarztpraxis Frese</h1>
-      <p>Ihre Kleintierpraxis in Speyer</p>
-  </div>
-
-  <div class="alert alert-info" role="alert">Unsere Website befindet sich zur Zeit in der Wartung. Hier finden Sie die wichtigsten Informationen.
-  </div>
-
-
-<div class="panel panel-default">
-  <div class="panel-body">
-      <h3> Kontakt</h3>
-      Telefon (06232) 91 91 933<br>
-Fax (06232) 91 91 929<br>
-info@tierarztpraxis-frese.de<br>
-  </div>
-
+            <h3>Offene Sprechstunde</h3>
+            <table class="table">
+                <thead>
+                    <th>Wochentag</th>
+                    <th>Sprechstunde</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mo, Di, Do, Fr</td>
+                        <td>
+                            12.00 - 13.00<br><br>
+                            17.00 - 18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mittwoch</td>
+                        <td>
+                            17.00 - 18.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2599.9092086776323!2d8.435595916062871!3d49.334937674986996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797b68481984085%3A0x6f6dd6f0843a4b3e!2sTierarztpraxis+Frese!5e0!3m2!1sde!2sde!4v1509359204193" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
 </div>
 
-<div class="panel panel-default">
-
-  <div class="panel-body">
-<h3>Öffnungszeiten</h3>
-      <p>Zu den Öffnungszeiten ist die Praxis geöffnet und die Anmeldung besetzt. Wenn Sie Medikamente oder Futtermittel abholen oder einen Termin vereinbaren möchten, können Sie innerhalb dieser Zeiten vorbeikommen oder uns telefonisch erreichen.<br><br>
-
-Wir freuen uns auch, wenn Sie einfach mal nur vorbeischauen und sich über das aktuelle Angebot informieren oder Ihren Hund wiegen möchten.<br><br>
-
-<b>Für Behandlungen außerhalb der offenen Sprechstunde benötigen Sie einen Termin.</b></p>
-
-    <table class="table">
-        <thead>
-            <th>Wochentag</th>
-            <th>Öffnungszeiten</th>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Mo, Di, Do, Fr</td>
-            <td>
-                08.30 - 13.00<br><br>
-
-                14.30 - 18.00</td>
-        </tr>
-        <tr>
-            <td>Mittwoch</td>
-            <td>
-                14.30 - 20.00</td>
-        </tr>
-        <tr>
-            <td>Samstag</td>
-            <td>
-                08.30 - 11.00</td>
-        </tr>
-    </tbody>
-    </table>
-
-<h3>Offene Sprechstunde</h3>
-    <table class="table">
-        <thead>
-            <th>Wochentag</th>
-            <th>Öffnungszeiten</th>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Mo, Di, Do, Fr</td>
-            <td>
-
-12.00 - 13.00<br><br>
-
-
-17.00 - 18.00</td>
-        </tr>
-        <tr>
-            <td>Mittwoch</td>
-            <td>
-
-17.00 - 18.00</td>
-        </tr>
-
-    </tbody>
-    </table>
-
-
-  </div>
-</div>
-
-<div class="embed-responsive embed-responsive-16by9">
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2599.9092086776323!2d8.435595916062871!3d49.334937674986996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797b68481984085%3A0x6f6dd6f0843a4b3e!2sTierarztpraxis+Frese!5e0!3m2!1sde!2sde!4v1509359204193" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-</div>
-
-
-
-
-
-
-749fb3 #f9eed2"
-
-</div>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
 </html>
