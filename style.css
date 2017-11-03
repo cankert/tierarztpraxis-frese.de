@@ -89,3 +89,12 @@ nav a{
     margin-bottom: 20px !important;
 }
 }
+
+
+.hover{
+    transition: all .2s ease-in-out;
+}
+
+.hover:hover{
+    transform: scale(1.02);
+}
