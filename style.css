@@ -1,13 +1,20 @@
 body{
     background-color:#f9eed2;
+    color:#636967 !important;
 }
 
 h3{
     margin-top: 5px;
+    color:#636967 !important;
+}
+
+p{
+    color:#636967 !important;
 }
 
 h3 .headline {
     margin-top: 15px;
+
 }
 .panel-body{
     padding-top:15px;
@@ -19,6 +26,13 @@ h3 .headline {
 
 .margin-top{
     margin-top:15px;
+}
+
+.label{
+    padding:5px;
+    margin:2px !important;
+    margin-top:10px !important;
+    line-height: 3 !important;
 }
 
 .jumbotron {
