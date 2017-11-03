@@ -18,21 +18,13 @@
     <link href="style.css" rel="stylesheet">
     <script src="jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js"></script>
 
-
-
-    <!-- Custom styles for this template -->
-    <!-- <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">-->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body >
-
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -52,6 +44,7 @@
               <li><a href="index.html">Öffnungszeiten <span class="sr-only">(current)</span></a></li>
               <li><a href="medizinische_leistungen">Medizinische Leistungen</a></li>
               <li><a href="notdienst.html">Notdienst</a></li>
+
              <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -73,8 +66,82 @@
 
 <!--<div class="alert alert-info alert-dismissable" data-dismiss="alert" role="alert"><center>Unsere Website befindet sich zur Zeit in der Wartung. Hier finden Sie die wichtigsten Informationen.<div data-dismiss="alert" class="close">x</div></center>
 </div>-->
-<div class="container" style="padding-top:50px">
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>-->
+          <h4 class="modal-title">Information</h4>
+        </div>
+        <div class="modal-body">
+          <p>Unsere Website befindet sich in der Wartung. Hier finden Sie die wichtigsten Informationen.</p>
+        </div>
+        <div class="modal-footer">
+          <!-- Make sure to include the 'nothanks' class on the buttons -->
+          <button class="btn btn-primary nothanks" data-dismiss="modal" aria-hidden="true">weiter zur Website</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script>
+      // Delayed Modal Display + Cookie On Click
+      $(document).ready(function() {
+
+        // If no cookie with our chosen name (e.g. no_thanks)...
+        if ($.cookie("information") == null) {
+
+          // Show the modal, with delay func.
+          $('#myModal').appendTo("body");
+          function show_modal(){
+            $('#myModal').modal();
+          }
+
+          // Set delay func. time in milliseconds
+          window.setTimeout(show_modal, 1000);
+          }
+
+        // On click of specified class (e.g. 'nothanks'), trigger cookie, which expires in 100 years
+        $(".nothanks").click(function() {
+          $.cookie('information', 'true', { expires: 36500, path: '/' });
+        });
+      });
+    </script>
+
+
+
+<div class="container" style="padding-top:50px; margin-bottom:0px;">
     <div class="jumbotron"></div> <!-- Hier ist das Logo drin -->
+
+    <div class="panel panel-default" style="margin-top:0px;">
+        <div class="panel-body">
+            <div class="row">
+
+                <div class="col-md-6  "  ><img src="bilder/xmas.png" class="img-responsive center-block" height="1000" width="100%" alt="Responsive image">
+                </div>
+
+                <div class="col-md-6" >
+                    <h3> Einladung zum Tierweihnachtsmarkt</h3>
+                    <p>Am 3.12. findet unser 6. Tierweihnachtsmarkt statt. Ein kleines Jubiläum. Wir freuen uns auf einen tollen Tag, zu dem wir Sie herzlich einladen.</p>
+                    <p>Infos zu den Ständen?</p>
+                    <span class="label label-info">Futterberatung</span>
+                    <span class="label label-info">Glühwein</span>
+                    <span class="label label-info">Tierfotograf</span>
+                    <span class="label label-info">Lotterie</span>
+                    <span class="label label-info">Leinen und Halsbänder</span>
+                    <span class="label label-info">Katzenhöhlen</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
 
     <div class="panel panel-default">
         <div class="panel-body">
@@ -146,7 +213,6 @@
 </div>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
 </html>

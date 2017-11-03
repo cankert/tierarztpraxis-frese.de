@@ -23,11 +23,12 @@ h3 .headline {
 
 .jumbotron {
     background:#f9eed2;
-    background-image: url("logo.png");
+    background-image: url("bilder/logo.png");
     background-repeat: no-repeat;
     background-position: center;
     color:white;
     height: 174px;
+    margin-bottom: 0px !important;
 }
 
 .container{
@@ -36,8 +37,8 @@ h3 .headline {
 
 .panel-heading{
     padding:15px;
-    /*background-color: #e0ebe8 !important;
-    color:grey !important;*/
+    background-color: #FAFAFA !important;
+    color:black !important;
 }
 
 nav{
